@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduWorld - Your Global Learning Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-gray-800">
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <i class="fas fa-globe-americas text-blue-600 text-3xl"></i>
+                <span class="text-2xl font-bold text-gray-900">EduWorld</span>
+            </a>
+
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-gray-600 text-2xl"></i>
+            </button>
+
+            <nav id="main-navigation" class="hidden md:flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 absolute md:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-lg md:shadow-none py-4 md:py-0 rounded-b-lg md:rounded-none">
+                <a href="index.html#home" class="block px-4 py-2 text-gray-700 hover:text-blue-600 font-medium rounded-md transition duration-300">Home</a>
+                <a href="index.html#courses" class="block px-4 py-2 text-gray-700 hover:text-blue-600 font-medium rounded-md transition duration-300">Courses</a>
+                <a href="community.html" class="block px-4 py-2 text-gray-700 hover:text-blue-600 font-medium rounded-md transition duration-300">Community</a>
+                <a href="#about" class="block px-4 py-2 text-gray-700 hover:text-blue-600 font-medium rounded-md transition duration-300">About Us</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-700 hover:text-blue-600 font-medium rounded-md transition duration-300">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex space-x-4" id="auth-buttons-container">
+                <a href="login.html" class="px-6 py-2 bg-gray-100 text-blue-600 font-semibold rounded-full hover:bg-blue-50 transition duration-300 shadow-sm">Login</a>
+                <a href="register.html" class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300 shadow-md">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 md:py-32 overflow-hidden">
+        <div class="container mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">Unlock Your Potential with EduWorld</h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in-up delay-200">Interactive lessons, expert instructors, and a vibrant community for grades 1-12.</p>
+                <a href="register.html" class="px-8 py-4 bg-yellow-400 text-blue-800 font-bold text-lg rounded-full hover:bg-yellow-300 transition duration-300 transform hover:scale-105 shadow-lg animate-fade-in-up delay-400">Start Learning Today!</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end">
+                <img src="https://placehold.co/500x300/60a5fa/ffffff?text=Learning+Illustration" alt="Learning Illustration" class="w-full max-w-md rounded-xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full">
+            <div class="absolute w-64 h-64 bg-white opacity-5 rounded-full -top-16 -left-16 transform rotate-45"></div>
+            <div class="absolute w-96 h-96 bg-white opacity-5 rounded-full -bottom-32 -right-32 transform -rotate-30"></div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-16 bg-white">
+        <div class="container mx-auto px-6 md:px-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Explore Courses by Grade Level</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <div class="bg-blue-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-child text-blue-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Grades 1-3</h3>
+                    <p class="text-gray-600">Foundational learning for young minds.</p>
+                    <a href="dashboard.html?grade=1-3" class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-full text-sm hover:bg-blue-700 transition-colors">View Courses</a>
+                </div>
+                <div class="bg-green-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-book-open text-green-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Grades 4-6</h3>
+                    <p class="text-gray-600">Building core academic skills.</p>
+                    <a href="dashboard.html?grade=4-6" class="mt-4 px-4 py-2 bg-green-600 text-white rounded-full text-sm hover:bg-green-700 transition-colors">View Courses</a>
+                </div>
+                <div class="bg-purple-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-flask text-purple-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Grades 7-9</h3>
+                    <p class="text-gray-600">Exploring new subjects and concepts.</p>
+                    <a href="dashboard.html?grade=7-9" class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-full text-sm hover:bg-purple-700 transition-colors">View Courses</a>
+                </div>
+                <div class="bg-red-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <i class="fas fa-graduation-cap text-red-600 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Grades 10-12</h3>
+                    <p class="text-gray-600">Advanced studies and college prep.</p>
+                    <a href="dashboard.html?grade=10-12" class="mt-4 px-4 py-2 bg-red-600 text-white rounded-full text-sm hover:bg-red-700 transition-colors">View Courses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 md:px-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">Featured Lessons</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x350/a78bfa/ffffff?text=Math+Lesson" alt="Math Lesson" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Introduction to Algebra</h3>
+                        <p class="text-gray-600 text-sm mb-4">Grade 8 | Ms. Sarah Chen</p>
+                        <p class="text-gray-700 mb-4">Learn the basics of algebraic expressions and equations in this engaging lesson.</p>
+                        <a href="dashboard.html?lesson=algebra" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">Watch Now</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x350/fca5a5/ffffff?text=History+Lesson" alt="History Lesson" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">World War II Overview</h3>
+                        <p class="text-gray-600 text-sm mb-4">Grade 10 | Mr. David Lee</p>
+                        <p class="text-gray-700 mb-4">A concise yet comprehensive look at the causes, events, and outcomes of WWII.</p>
+                        <a href="dashboard.html?lesson=wwii" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">Watch Now</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x350/86efac/ffffff?text=Science+Lesson" alt="Science Lesson" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">The Water Cycle Explained</h3>
+                        <p class="text-gray-600 text-sm mb-4">Grade 5 | Dr. Emily White</p>
+                        <p class="text-gray-700 mb-4">Discover how water moves through our planet in this animated science lesson.</p>
+                        <a href="dashboard.html?lesson=water-cycle" class="px-5 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="py-16 bg-blue-50">
+        <div class="container mx-auto px-6 md:px-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Join Our Vibrant Learning Community</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-10">Connect with fellow students, ask questions, share insights, and collaborate on projects in our dedicated forums.</p>
+            <a href="community.html" class="px-8 py-4 bg-blue-600 text-white font-bold text-lg rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-lg">Explore Community</a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12 px-6 md:px-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-4">EduWorld</h3>
+                <p class="text-gray-400 text-sm">Empowering students worldwide with quality education from grades 1 to 12. Learn, grow, and connect.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html#home" class="text-gray-400 hover:text-blue-400 transition-colors">Home</a></li>
+                    <li><a href="index.html#courses" class="text-gray-400 hover:text-blue-400 transition-colors">Courses</a></li>
+                    <li><a href="community.html" class="text-gray-400 hover:text-blue-400 transition-colors">Community</a></li>
+                    <li><a href="#about" class="text-gray-400 hover:text-blue-400 transition-colors">About Us</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-blue-400 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Connect With Us</h3>
+                <p class="text-gray-400 text-sm mb-4">Email: info@eduworld.com</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors text-2xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors text-2xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors text-2xl"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-8">
+            &copy; 2025 EduWorld. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    </body>
+</html>
